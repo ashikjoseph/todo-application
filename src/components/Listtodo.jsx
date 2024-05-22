@@ -24,7 +24,7 @@ function Listtodo({uploadTodoStatus}) {
   }, [uploadTodoStatus])
   const removeTODO = async (id) => {
     const response = await deleteTodo(id);
-    alert("successfully deleted the tos item");
+    alert("successfully deleted the toDo item");
     getAllTodoItem();
   }
   const getTodoDetails = async(id)=>{

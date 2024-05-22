@@ -27,6 +27,7 @@ function Addtodo({ setUploadTodoStatus }) {
                 <h3 className='text-primary mt-5 mb-3'>ToDo Application</h3>
                 <div className='mt-3'>
                     <input type="text" className='form-control border-primary'
+                    placeholder='Name'
                     value={todoValue.todoName}
                         onChange={(e) => setToDoValue({ ...todoValue, todoName: e.target.value })}
                     />
@@ -35,6 +36,7 @@ function Addtodo({ setUploadTodoStatus }) {
                     <textarea id="w3review" name="w3review" rows="3" cols="30"
                     value={todoValue.todoDescription}
                         className='form-control border-primary'
+                        placeholder='Description'
                         onChange={(e) => setToDoValue({ ...todoValue, todoDescription: e.target.value })}>
                     </textarea>
                 </div>
